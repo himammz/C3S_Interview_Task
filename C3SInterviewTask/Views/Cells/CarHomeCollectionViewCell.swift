@@ -9,9 +9,18 @@ import UIKit
 
 class CarHomeCollectionViewCell: UICollectionViewCell {
 
+    static let reuseIdentifier = String(describing: self)
+    static var nib: UINib {
+        return UINib(nibName: String(describing: self), bundle: nil)
+    }
+
+    @IBOutlet weak var carImageView: UIImageView!
+    @IBOutlet weak var categoryNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
 }
+
