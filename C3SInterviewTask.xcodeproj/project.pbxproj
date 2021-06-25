@@ -16,6 +16,9 @@
 		0F7D2833268608EE00AE1983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D2832268608EE00AE1983 /* Assets.xcassets */; };
 		0F7D283526860CD500AE1983 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283426860CD500AE1983 /* LoginViewController.swift */; };
 		0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283826860E6600AE1983 /* CustomTextField.swift */; };
+		0F7D283D2686235B00AE1983 /* CarHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283B2686235B00AE1983 /* CarHomeCollectionViewCell.swift */; };
+		0F7D283E2686235B00AE1983 /* CarHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D283C2686235B00AE1983 /* CarHomeCollectionViewCell.xib */; };
+		0F7D2840268623EE00AE1983 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283F268623EE00AE1983 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		0F7D2832268608EE00AE1983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		0F7D283426860CD500AE1983 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0F7D283826860E6600AE1983 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0F7D283B2686235B00AE1983 /* CarHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F7D283C2686235B00AE1983 /* CarHomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		0F7D283F268623EE00AE1983 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		0F7D283626860E3A00AE1983 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0F7D283A2686233200AE1983 /* Cells */,
 				0F7D283726860E3F00AE1983 /* components */,
 			);
 			path = Views;
@@ -88,8 +95,18 @@
 			isa = PBXGroup;
 			children = (
 				0F7D283826860E6600AE1983 /* CustomTextField.swift */,
+				0F7D283F268623EE00AE1983 /* CardView.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		0F7D283A2686233200AE1983 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D283B2686235B00AE1983 /* CarHomeCollectionViewCell.swift */,
+				0F7D283C2686235B00AE1983 /* CarHomeCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7D283E2686235B00AE1983 /* CarHomeCollectionViewCell.xib in Resources */,
 				0F7D2828268602B400AE1983 /* LaunchScreen.storyboard in Resources */,
 				0F7D28312686064900AE1983 /* Color.xcassets in Resources */,
 				0F7D2823268602B300AE1983 /* Main.storyboard in Resources */,
@@ -163,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7D2840268623EE00AE1983 /* CardView.swift in Sources */,
 				0F7D283526860CD500AE1983 /* LoginViewController.swift in Sources */,
 				0F7D2820268602B300AE1983 /* SplashViewController.swift in Sources */,
+				0F7D283D2686235B00AE1983 /* CarHomeCollectionViewCell.swift in Sources */,
 				0F7D281C268602B300AE1983 /* AppDelegate.swift in Sources */,
 				0F7D281E268602B300AE1983 /* SceneDelegate.swift in Sources */,
 				0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */,

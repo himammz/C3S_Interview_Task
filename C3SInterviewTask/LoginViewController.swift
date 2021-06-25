@@ -11,9 +11,11 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
      }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -21,13 +23,33 @@ class LoginViewController: UIViewController {
         setupUi()
     }
 
- 
-    
-    
-    
     func setupUi(){
-        
         continueButton.layer.cornerRadius = 20
- 
     }
+    
+    
+    
+    
+    @IBAction func continueAction(_ sender: Any) {
+         guard  isValidUserName() else {
+            return
+        }
+        
+        
+    }
+    
+    
+    
+    // MARK- Validation
+    func isValidUserName () -> Bool {
+        let format = "SELF MATCHES %@"
+        let regx = "[A-Z0-9a-z\\u0621-\\u064A]{1,30}"
+        let text = userNameTextField.text ?? ""
+        return NSPredicate(format: format, regx).evaluate(with: text)
+    }
+    
+    func saveUserData(){
+        
+    }
+
 }
