@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aJW-oM-la9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -43,7 +43,77 @@
             </objects>
             <point key="canvasLocation" x="53.623188405797109" y="65.625"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="p7I-5C-bsO">
+            <objects>
+                <viewController id="aJW-oM-la9" customClass="LoginViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZ9-rI-sAt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circleshadow_Light" translatesAutoresizingMaskIntoConstraints="NO" id="km5-Vb-jvQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="MainAppColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to our rental car app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-iH-rWQ">
+                                <rect key="frame" x="40" y="339" width="334" height="67"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89L-vX-9WV" customClass="CustomTextField" customModule="C3SInterviewTask" customModuleProvider="target">
+                                <rect key="frame" x="30" y="426" width="354" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6Cx-91-iBK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAM-gu-RS8">
+                                <rect key="frame" x="107" y="762" width="200" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9Ke-fs-7rM"/>
+                                    <constraint firstAttribute="height" constant="40" id="vhm-cU-LG7"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DBv-Ws-9BI"/>
+                        <color key="backgroundColor" name="MainAppColor"/>
+                        <constraints>
+                            <constraint firstItem="89L-vX-9WV" firstAttribute="leading" secondItem="DBv-Ws-9BI" secondAttribute="leading" constant="30" id="4mG-Dx-8GG"/>
+                            <constraint firstItem="SIy-iH-rWQ" firstAttribute="leading" secondItem="DBv-Ws-9BI" secondAttribute="leading" constant="40" id="7DQ-xK-7Xn"/>
+                            <constraint firstItem="iAM-gu-RS8" firstAttribute="centerX" secondItem="vZ9-rI-sAt" secondAttribute="centerX" id="FhE-ON-9ZV"/>
+                            <constraint firstItem="DBv-Ws-9BI" firstAttribute="bottom" secondItem="iAM-gu-RS8" secondAttribute="bottom" constant="60" id="Gwb-KJ-caf"/>
+                            <constraint firstItem="km5-Vb-jvQ" firstAttribute="top" secondItem="vZ9-rI-sAt" secondAttribute="top" id="PTZ-Og-tTD"/>
+                            <constraint firstItem="km5-Vb-jvQ" firstAttribute="leading" secondItem="DBv-Ws-9BI" secondAttribute="leading" id="Wdt-1E-WvE"/>
+                            <constraint firstItem="89L-vX-9WV" firstAttribute="centerY" secondItem="vZ9-rI-sAt" secondAttribute="centerY" id="WuB-NT-cfR"/>
+                            <constraint firstItem="km5-Vb-jvQ" firstAttribute="trailing" secondItem="DBv-Ws-9BI" secondAttribute="trailing" id="amc-TJ-m8Y"/>
+                            <constraint firstAttribute="bottom" secondItem="km5-Vb-jvQ" secondAttribute="bottom" id="f0J-M8-kCF"/>
+                            <constraint firstItem="89L-vX-9WV" firstAttribute="top" secondItem="SIy-iH-rWQ" secondAttribute="bottom" constant="20" id="fHC-DH-mKF"/>
+                            <constraint firstItem="SIy-iH-rWQ" firstAttribute="centerX" secondItem="km5-Vb-jvQ" secondAttribute="centerX" id="gWh-72-PCs"/>
+                            <constraint firstItem="89L-vX-9WV" firstAttribute="centerX" secondItem="vZ9-rI-sAt" secondAttribute="centerX" id="s3f-xz-2Pn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="iAM-gu-RS8" id="ygs-JP-ovM"/>
+                        <outlet property="userNameTextField" destination="89L-vX-9WV" id="hmB-vQ-U8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhp-FQ-G2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="66"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="89L-vX-9WV">
+            <size key="intrinsicContentSize" width="72" height="18.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="circleshadow_Light" width="388" height="817"/>
         <namedColor name="MainAppColor">
