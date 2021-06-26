@@ -22,6 +22,8 @@
 		0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D28442686431C00AE1983 /* CustomBotton.swift */; };
 		0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */; };
 		0FD257E02687489200D72F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DF2687489200D72F4B /* User.swift */; };
+		0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E226875C5A00D72F4B /* CarCategory.swift */; };
+		0FD257E526875D4900D72F4B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E426875D4900D72F4B /* Car.swift */; };
 		4C6A2BB18535A0C60FD7A6DB /* Pods_C3SInterviewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		0F7D28442686431C00AE1983 /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
 		0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FD257DF2687489200D72F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0FD257E226875C5A00D72F4B /* CarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCategory.swift; sourceTree = "<group>"; };
+		0FD257E426875D4900D72F4B /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.debug.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C3SInterviewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.release.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		0F7D281A268602B300AE1983 /* C3SInterviewTask */ = {
 			isa = PBXGroup;
 			children = (
+				0FD257E126875C4700D72F4B /* Models */,
 				0F7D2841268625C600AE1983 /* Controllers */,
 				0F7D283626860E3A00AE1983 /* Views */,
 				0F7D281B268602B300AE1983 /* AppDelegate.swift */,
@@ -131,6 +136,15 @@
 				0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0FD257E126875C4700D72F4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FD257E226875C5A00D72F4B /* CarCategory.swift */,
+				0FD257E426875D4900D72F4B /* Car.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2C11CB27F35F2D58AD28BF93 /* Frameworks */ = {
@@ -266,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */,
 				0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */,
+				0FD257E526875D4900D72F4B /* Car.swift in Sources */,
 				0F7D2840268623EE00AE1983 /* CardView.swift in Sources */,
 				0F7D283526860CD500AE1983 /* LoginViewController.swift in Sources */,
 				0F7D2820268602B300AE1983 /* SplashViewController.swift in Sources */,
