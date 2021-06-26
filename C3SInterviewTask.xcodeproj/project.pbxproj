@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F04AA5D2687DE9E0063EE7D /* CarCompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */; };
+		0F04AA5E2687DE9E0063EE7D /* CarCompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F04AA5C2687DE9E0063EE7D /* CarCompanyTableViewCell.xib */; };
+		0F04AA602687DFEF0063EE7D /* CompanyTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AA5F2687DFEF0063EE7D /* CompanyTableViewModel.swift */; };
 		0F7D281C268602B300AE1983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D281B268602B300AE1983 /* AppDelegate.swift */; };
 		0F7D2820268602B300AE1983 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D281F268602B300AE1983 /* SplashViewController.swift */; };
 		0F7D2823268602B300AE1983 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D2821268602B300AE1983 /* Auth.storyboard */; };
@@ -21,7 +24,7 @@
 		0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */; };
 		0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D28442686431C00AE1983 /* CustomBotton.swift */; };
 		0FAA51DB2687914700CDAA40 /* Car.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA51DA2687914700CDAA40 /* Car.storyboard */; };
-		0FAA51DD2687A12400CDAA40 /* CarListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51DC2687A12400CDAA40 /* CarListTableViewController.swift */; };
+		0FAA51DD2687A12400CDAA40 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51DC2687A12400CDAA40 /* CompanyTableViewController.swift */; };
 		0FAA51DF2687A75900CDAA40 /* CategoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51DE2687A75900CDAA40 /* CategoryDetailsViewController.swift */; };
 		0FAA51E12687A7FC00CDAA40 /* CategoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51E02687A7FC00CDAA40 /* CategoryDetailsViewModel.swift */; };
 		0FAA51E42687B9AF00CDAA40 /* CarDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51E22687B9AE00CDAA40 /* CarDetailsCollectionViewCell.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCompanyTableViewCell.swift; sourceTree = "<group>"; };
+		0F04AA5C2687DE9E0063EE7D /* CarCompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCompanyTableViewCell.xib; sourceTree = "<group>"; };
+		0F04AA5F2687DFEF0063EE7D /* CompanyTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableViewModel.swift; sourceTree = "<group>"; };
 		0F7D2818268602B300AE1983 /* C3SInterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C3SInterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7D281B268602B300AE1983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F7D281F268602B300AE1983 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +63,7 @@
 		0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0F7D28442686431C00AE1983 /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
 		0FAA51DA2687914700CDAA40 /* Car.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Car.storyboard; sourceTree = "<group>"; };
-		0FAA51DC2687A12400CDAA40 /* CarListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewController.swift; sourceTree = "<group>"; };
+		0FAA51DC2687A12400CDAA40 /* CompanyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewController.swift; sourceTree = "<group>"; };
 		0FAA51DE2687A75900CDAA40 /* CategoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsViewController.swift; sourceTree = "<group>"; };
 		0FAA51E02687A7FC00CDAA40 /* CategoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		0FAA51E22687B9AE00CDAA40 /* CarDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -152,6 +158,8 @@
 				0F7D283C2686235B00AE1983 /* CarHomeCollectionViewCell.xib */,
 				0FAA51E22687B9AE00CDAA40 /* CarDetailsCollectionViewCell.swift */,
 				0FAA51E32687B9AE00CDAA40 /* CarDetailsCollectionViewCell.xib */,
+				0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */,
+				0F04AA5C2687DE9E0063EE7D /* CarCompanyTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -163,7 +171,7 @@
 				0F7D283426860CD500AE1983 /* LoginViewController.swift */,
 				0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */,
 				0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */,
-				0FAA51DC2687A12400CDAA40 /* CarListTableViewController.swift */,
+				0FAA51DC2687A12400CDAA40 /* CompanyTableViewController.swift */,
 				0FAA51DE2687A75900CDAA40 /* CategoryDetailsViewController.swift */,
 				0FAA51E62687BBC900CDAA40 /* CarsCollectionViewController.swift */,
 			);
@@ -197,6 +205,7 @@
 				0FD257F026877E6A00D72F4B /* HomeViewModel.swift */,
 				0FAA51E02687A7FC00CDAA40 /* CategoryDetailsViewModel.swift */,
 				0FAA51E82687BC8F00CDAA40 /* CarsCollectionViewModel.swift */,
+				0F04AA5F2687DFEF0063EE7D /* CompanyTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -292,6 +301,7 @@
 				0FD257EB2687638400D72F4B /* CarCategories.json in Resources */,
 				0FAA51DB2687914700CDAA40 /* Car.storyboard in Resources */,
 				0F7D28312686064900AE1983 /* Color.xcassets in Resources */,
+				0F04AA5E2687DE9E0063EE7D /* CarCompanyTableViewCell.xib in Resources */,
 				0FD257EC2687638400D72F4B /* carsRecords.json in Resources */,
 				0F7D2823268602B300AE1983 /* Auth.storyboard in Resources */,
 				0F7D2833268608EE00AE1983 /* Assets.xcassets in Resources */,
@@ -348,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */,
+				0F04AA602687DFEF0063EE7D /* CompanyTableViewModel.swift in Sources */,
 				0FAA51E72687BBC900CDAA40 /* CarsCollectionViewController.swift in Sources */,
 				0FAA51E42687B9AF00CDAA40 /* CarDetailsCollectionViewCell.swift in Sources */,
 				0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */,
@@ -358,13 +369,14 @@
 				0F7D283526860CD500AE1983 /* LoginViewController.swift in Sources */,
 				0F7D2820268602B300AE1983 /* SplashViewController.swift in Sources */,
 				0FD257F3268787FC00D72F4B /* UIViewController+Indicator.swift in Sources */,
-				0FAA51DD2687A12400CDAA40 /* CarListTableViewController.swift in Sources */,
+				0FAA51DD2687A12400CDAA40 /* CompanyTableViewController.swift in Sources */,
 				0F7D283D2686235B00AE1983 /* CarHomeCollectionViewCell.swift in Sources */,
 				0FAA51DF2687A75900CDAA40 /* CategoryDetailsViewController.swift in Sources */,
 				0FAA51E12687A7FC00CDAA40 /* CategoryDetailsViewModel.swift in Sources */,
 				0F7D281C268602B300AE1983 /* AppDelegate.swift in Sources */,
 				0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */,
 				0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */,
+				0F04AA5D2687DE9E0063EE7D /* CarCompanyTableViewCell.swift in Sources */,
 				0FD257E02687489200D72F4B /* User.swift in Sources */,
 				0FD257F126877E6A00D72F4B /* HomeViewModel.swift in Sources */,
 				0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */,

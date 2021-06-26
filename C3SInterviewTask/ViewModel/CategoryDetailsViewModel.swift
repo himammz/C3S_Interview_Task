@@ -21,11 +21,11 @@ class CategoryDetailsViewModel{
     let carCategory:CarCategory
     
     var carsCount:Int{
-        return carsCollectionViewModel.count
+        return cars.count
     }
     
-
-    var carsCollectionViewModel:[CarCollectionCellViewModel] = []
+    var cars:[Car] = []
+//    var carsCollectionViewModel:[CarCellCellViewModel] = []
     let fileName = "carsRecords"
     
     
@@ -53,16 +53,34 @@ class CategoryDetailsViewModel{
     }
     
     func filterCars( allCars:[Car]) {
-       let filterdCars = allCars.filter({$0.style == categoryName})
-        carsCollectionViewModel = filterdCars.map({
-            CarCollectionCellViewModel(car: $0)
-        })
+       cars = allCars.filter({$0.style == categoryName})
+        
         
         
         
     }
     
+    func getCarsCollectionViewModel() -> CarsCollectionViewModel{
+        let carCellCellViewModel = cars.map({
+            CarCellCellViewModel(car: $0)
+        })
+
+        return CarsCollectionViewModel(carsCellViewModel: carCellCellViewModel)
+    }
     
+    func getCompanyTableViewModel()->CompanyTableViewModel{
+        
+        let groupedCars = Dictionary(grouping: cars, by: {$0.carCompany}).values
+        
+       let companySections =  groupedCars.map({
+            CompanySectionViewModel(isOpen: false, cars: $0.map({
+                CarCellCellViewModel(car: $0)
+            }))
+        })
+        
+        
+        return CompanyTableViewModel(companiesViewModel: companySections )
+    }
     
     
 }

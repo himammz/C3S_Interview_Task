@@ -8,14 +8,14 @@
 import Foundation
 
 struct CarsCollectionViewModel{
-    let carsViewModel:[CarCollectionCellViewModel]
+    let carsCellViewModel:[CarCellCellViewModel]
     
     var numberOfIrems:Int{
-        return carsViewModel.count
+        return carsCellViewModel.count
     }
     
-    func itemAt(indexPath:IndexPath)-> CarCollectionCellViewModel{
-        let carVm = carsViewModel[indexPath.item]
+    func itemAt(indexPath:IndexPath)-> CarCellCellViewModel{
+        let carVm = carsCellViewModel[indexPath.item]
         return carVm
     }
     
@@ -24,7 +24,7 @@ struct CarsCollectionViewModel{
 
 
 
-struct CarCollectionCellViewModel{
+struct CarCellCellViewModel{
     let car:Car
     
     var model:String{
@@ -46,6 +46,14 @@ struct CarCollectionCellViewModel{
         return URL(string:escapedString)!
         
     }
+    var logoURL : URL{
+        
+        let urlString = car.logo ?? ""
+        let escapedString = urlString.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? ""
+        return URL(string:escapedString)!
+        
+    }
+
 
 
 }

@@ -15,7 +15,7 @@ class CarDetailsCollectionViewCell: UICollectionViewCell {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
 
-    var cellViewModel:CarCollectionCellViewModel!{
+    var cellViewModel:CarCellCellViewModel!{
         didSet{
             companyNameLabel.text = cellViewModel.companyName
             carModelLabel.text = cellViewModel.model
