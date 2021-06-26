@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     
     static var instance:LoginViewController{
-        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
+        let vc =  UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
          return vc
 
     }
@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func continueAction(_ sender: Any) {
          guard  isValidUserName() else {
+            showMessage("user name must be 1-30 characters,only Letters allowed")
             return
         }
         saveUser()

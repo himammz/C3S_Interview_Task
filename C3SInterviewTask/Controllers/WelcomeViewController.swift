@@ -12,7 +12,7 @@ class WelcomeViewController: UIViewController {
     
     static var instance:WelcomeViewController{
         
-        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
+        let vc =  UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "welcomeViewController") as! WelcomeViewController
          return vc
 
     }

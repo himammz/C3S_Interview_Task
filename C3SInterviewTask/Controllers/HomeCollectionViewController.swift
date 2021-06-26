@@ -15,19 +15,17 @@ class HomeCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
         self.collectionView.register(CarHomeCollectionViewCell.nib, forCellWithReuseIdentifier: CarHomeCollectionViewCell.reuseIdentifier)
  
- 
         loadData()
     }
     func loadData(){
-        
+        showHUD()
          viewModel.laodData(){ [weak self] in
- 
+            self?.hideHUD()
             self?.collectionView.reloadData()
         }
     }
@@ -42,9 +40,6 @@ class HomeCollectionViewController: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
-
- 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfIrems
     }
@@ -89,13 +84,13 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
  }
 extension HomeCollectionViewController{
     static var instance:WelcomeViewController{
-        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeCollectionViewController") as! WelcomeViewController
+        let vc =  UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "homeCollectionViewController") as! WelcomeViewController
          return vc
 
     }
     static var Navigationinstance:UINavigationController{
         
-        let navigationController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationController") as! UINavigationController
+        let navigationController =  UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationController") as! UINavigationController
          return navigationController
 
     }
