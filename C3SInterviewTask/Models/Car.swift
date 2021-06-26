@@ -12,7 +12,7 @@ struct Car:Codable{
     
     let carCompany :String?
     let logo :String?
-    let car_model :String?
+    let carModel :String?
     let style :String?
     let year :String?
     let price :String?

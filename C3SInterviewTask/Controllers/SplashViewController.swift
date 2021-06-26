@@ -17,7 +17,7 @@ class SplashViewController: UIViewController {
         
         clearUserIfFreshInstall()
         User.load()
-
+        print (JsonReader().readLocalJSONFile(forName: "CarCategories"))
     }
 
     

@@ -24,6 +24,10 @@
 		0FD257E02687489200D72F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DF2687489200D72F4B /* User.swift */; };
 		0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E226875C5A00D72F4B /* CarCategory.swift */; };
 		0FD257E526875D4900D72F4B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E426875D4900D72F4B /* Car.swift */; };
+		0FD257E7268762EC00D72F4B /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E6268762EC00D72F4B /* JsonReader.swift */; };
+		0FD257EB2687638400D72F4B /* CarCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FD257E92687638400D72F4B /* CarCategories.json */; };
+		0FD257EC2687638400D72F4B /* carsRecords.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FD257EA2687638400D72F4B /* carsRecords.json */; };
+		0FD257EE26877A2500D72F4B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257ED26877A2500D72F4B /* Request.swift */; };
 		4C6A2BB18535A0C60FD7A6DB /* Pods_C3SInterviewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		0FD257DF2687489200D72F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FD257E226875C5A00D72F4B /* CarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCategory.swift; sourceTree = "<group>"; };
 		0FD257E426875D4900D72F4B /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0FD257E6268762EC00D72F4B /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		0FD257E92687638400D72F4B /* CarCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarCategories.json; sourceTree = "<group>"; };
+		0FD257EA2687638400D72F4B /* carsRecords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsRecords.json; sourceTree = "<group>"; };
+		0FD257ED26877A2500D72F4B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.debug.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C3SInterviewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.release.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 				0F7D283626860E3A00AE1983 /* Views */,
 				0F7D281B268602B300AE1983 /* AppDelegate.swift */,
 				0F7D2821268602B300AE1983 /* Main.storyboard */,
+				0FD257ED26877A2500D72F4B /* Request.swift */,
 				0F7D2826268602B400AE1983 /* LaunchScreen.storyboard */,
 				0F7D2829268602B400AE1983 /* Info.plist */,
 				0F7D2832268608EE00AE1983 /* Assets.xcassets */,
@@ -141,10 +150,21 @@
 		0FD257E126875C4700D72F4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0FD257E82687635E00D72F4B /* JsonFiles */,
 				0FD257E226875C5A00D72F4B /* CarCategory.swift */,
 				0FD257E426875D4900D72F4B /* Car.swift */,
+				0FD257E6268762EC00D72F4B /* JsonReader.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0FD257E82687635E00D72F4B /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0FD257E92687638400D72F4B /* CarCategories.json */,
+				0FD257EA2687638400D72F4B /* carsRecords.json */,
+			);
+			path = JsonFiles;
 			sourceTree = "<group>";
 		};
 		2C11CB27F35F2D58AD28BF93 /* Frameworks */ = {
@@ -225,7 +245,9 @@
 			files = (
 				0F7D283E2686235B00AE1983 /* CarHomeCollectionViewCell.xib in Resources */,
 				0F7D2828268602B400AE1983 /* LaunchScreen.storyboard in Resources */,
+				0FD257EB2687638400D72F4B /* CarCategories.json in Resources */,
 				0F7D28312686064900AE1983 /* Color.xcassets in Resources */,
+				0FD257EC2687638400D72F4B /* carsRecords.json in Resources */,
 				0F7D2823268602B300AE1983 /* Main.storyboard in Resources */,
 				0F7D2833268608EE00AE1983 /* Assets.xcassets in Resources */,
 			);
@@ -282,6 +304,7 @@
 			files = (
 				0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */,
 				0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */,
+				0FD257E7268762EC00D72F4B /* JsonReader.swift in Sources */,
 				0FD257E526875D4900D72F4B /* Car.swift in Sources */,
 				0F7D2840268623EE00AE1983 /* CardView.swift in Sources */,
 				0F7D283526860CD500AE1983 /* LoginViewController.swift in Sources */,
@@ -290,6 +313,7 @@
 				0F7D281C268602B300AE1983 /* AppDelegate.swift in Sources */,
 				0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */,
 				0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */,
+				0FD257EE26877A2500D72F4B /* Request.swift in Sources */,
 				0FD257E02687489200D72F4B /* User.swift in Sources */,
 				0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */,
 			);
