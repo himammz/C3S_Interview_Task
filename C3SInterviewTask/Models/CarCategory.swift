@@ -10,15 +10,15 @@ import Foundation
  
 struct CarCategory:Codable{
     
-    let category:String
+    let name:String
     let imageName:String?
     let description:String?
     
     
     enum CodingKeys: String, CodingKey {
 
-        case category
-        case imageName = "image_name"
+        case name = "category"
+        case imageName = "ïmage_name"
         case description
 
     }

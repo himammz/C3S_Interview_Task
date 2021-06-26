@@ -7,14 +7,11 @@
 
 import UIKit
 
- 
+ import MBProgressHUD
 class HomeCollectionViewController: UICollectionViewController {
-    
-
-    
-    
     private let sectionInsets = UIEdgeInsets(top: 20,left: 20, bottom: 0,right: 20)
 
+    let viewModel:HomeViewModel = HomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,9 +21,16 @@ class HomeCollectionViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView.register(CarHomeCollectionViewCell.nib, forCellWithReuseIdentifier: CarHomeCollectionViewCell.reuseIdentifier)
  
-        // Do any additional setup after loading the view.
+ 
+        loadData()
     }
-
+    func loadData(){
+        
+         viewModel.laodData(){ [weak self] in
+ 
+            self?.collectionView.reloadData()
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -42,20 +46,23 @@ class HomeCollectionViewController: UICollectionViewController {
  
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         return 6
+        return viewModel.numberOfIrems
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarHomeCollectionViewCell.reuseIdentifier, for: indexPath) as! CarHomeCollectionViewCell
-        cell.carImageView.image = #imageLiteral(resourceName: "sedan-car-model")
-        cell.categoryNameLabel.text = "SUV"
-        return cell
+        
+         cell.carCategoryViewModel = viewModel.itemAt(indexPath: indexPath)
+        
+         return cell
     }
 
     // MARK: UICollectionViewDelegate
 
  
 }
+
 
 // MARK: - Collection View Flow Layout Delegate
 extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {

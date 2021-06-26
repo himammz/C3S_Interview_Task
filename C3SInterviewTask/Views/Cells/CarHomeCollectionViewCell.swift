@@ -14,6 +14,12 @@ class CarHomeCollectionViewCell: UICollectionViewCell {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
 
+    var carCategoryViewModel:CarCategoryViewModel!{
+        didSet{
+            categoryNameLabel.text = carCategoryViewModel.categoryName
+            carImageView.image = UIImage(named: carCategoryViewModel.imageName)
+        }
+    }
     @IBOutlet weak var carImageView: UIImageView!
     @IBOutlet weak var categoryNameLabel: UILabel!
     

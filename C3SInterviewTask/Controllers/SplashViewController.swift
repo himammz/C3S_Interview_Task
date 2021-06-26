@@ -17,8 +17,7 @@ class SplashViewController: UIViewController {
         
         clearUserIfFreshInstall()
         User.load()
-        print (JsonReader().readLocalJSONFile(forName: "CarCategories"))
-    }
+     }
 
     
     override func viewDidAppear(_ animated: Bool) {

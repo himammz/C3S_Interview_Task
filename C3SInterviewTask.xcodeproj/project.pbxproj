@@ -28,6 +28,7 @@
 		0FD257EB2687638400D72F4B /* CarCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FD257E92687638400D72F4B /* CarCategories.json */; };
 		0FD257EC2687638400D72F4B /* carsRecords.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FD257EA2687638400D72F4B /* carsRecords.json */; };
 		0FD257EE26877A2500D72F4B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257ED26877A2500D72F4B /* Request.swift */; };
+		0FD257F126877E6A00D72F4B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257F026877E6A00D72F4B /* HomeViewModel.swift */; };
 		4C6A2BB18535A0C60FD7A6DB /* Pods_C3SInterviewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		0FD257E92687638400D72F4B /* CarCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarCategories.json; sourceTree = "<group>"; };
 		0FD257EA2687638400D72F4B /* carsRecords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsRecords.json; sourceTree = "<group>"; };
 		0FD257ED26877A2500D72F4B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		0FD257F026877E6A00D72F4B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.debug.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C3SInterviewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.release.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		0F7D281A268602B300AE1983 /* C3SInterviewTask */ = {
 			isa = PBXGroup;
 			children = (
+				0FD257EF26877E5800D72F4B /* ViewModel */,
 				0FD257E126875C4700D72F4B /* Models */,
 				0F7D2841268625C600AE1983 /* Controllers */,
 				0F7D283626860E3A00AE1983 /* Views */,
@@ -165,6 +168,14 @@
 				0FD257EA2687638400D72F4B /* carsRecords.json */,
 			);
 			path = JsonFiles;
+			sourceTree = "<group>";
+		};
+		0FD257EF26877E5800D72F4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FD257F026877E6A00D72F4B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2C11CB27F35F2D58AD28BF93 /* Frameworks */ = {
@@ -315,6 +326,7 @@
 				0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */,
 				0FD257EE26877A2500D72F4B /* Request.swift in Sources */,
 				0FD257E02687489200D72F4B /* User.swift in Sources */,
+				0FD257F126877E6A00D72F4B /* HomeViewModel.swift in Sources */,
 				0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
