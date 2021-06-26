@@ -20,6 +20,7 @@
 		0F7D2840268623EE00AE1983 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283F268623EE00AE1983 /* CardView.swift */; };
 		0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */; };
 		0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D28442686431C00AE1983 /* CustomBotton.swift */; };
+		0FAA51DB2687914700CDAA40 /* Car.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA51DA2687914700CDAA40 /* Car.storyboard */; };
 		0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */; };
 		0FD257E02687489200D72F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DF2687489200D72F4B /* User.swift */; };
 		0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E226875C5A00D72F4B /* CarCategory.swift */; };
@@ -48,6 +49,7 @@
 		0F7D283F268623EE00AE1983 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0F7D28442686431C00AE1983 /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
+		0FAA51DA2687914700CDAA40 /* Car.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Car.storyboard; sourceTree = "<group>"; };
 		0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FD257DF2687489200D72F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FD257E226875C5A00D72F4B /* CarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCategory.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7D2821268602B300AE1983 /* Auth.storyboard */,
+				0FAA51DA2687914700CDAA40 /* Car.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				0F7D283E2686235B00AE1983 /* CarHomeCollectionViewCell.xib in Resources */,
 				0F7D2828268602B400AE1983 /* LaunchScreen.storyboard in Resources */,
 				0FD257EB2687638400D72F4B /* CarCategories.json in Resources */,
+				0FAA51DB2687914700CDAA40 /* Car.storyboard in Resources */,
 				0F7D28312686064900AE1983 /* Color.xcassets in Resources */,
 				0FD257EC2687638400D72F4B /* carsRecords.json in Resources */,
 				0F7D2823268602B300AE1983 /* Auth.storyboard in Resources */,

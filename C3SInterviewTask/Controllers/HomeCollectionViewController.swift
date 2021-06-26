@@ -84,13 +84,13 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
  }
 extension HomeCollectionViewController{
     static var instance:WelcomeViewController{
-        let vc =  UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "homeCollectionViewController") as! WelcomeViewController
+        let vc =  UIStoryboard(name: "Car", bundle: nil).instantiateViewController(withIdentifier: "homeCollectionViewController") as! WelcomeViewController
          return vc
 
     }
     static var Navigationinstance:UINavigationController{
         
-        let navigationController =  UIStoryboard(name: "Auth", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationController") as! UINavigationController
+        let navigationController =  UIStoryboard(name: "Car", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationController") as! UINavigationController
          return navigationController
 
     }
