@@ -28,9 +28,11 @@ class CategoryDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         categoryImageView.layer.cornerRadius = categoryImageView.frame.width / 2
+        setData()
+
         loadData()
-        print (children.first)
-     }
+
+    }
     
     
     
@@ -38,7 +40,14 @@ class CategoryDetailsViewController: UIViewController {
         showHUD()
         viewModel.laodData { [weak self] in
             self?.hideHUD()
-            self?.setData()
+            guard let self = self else {
+                return
+            }
+            
+            let carsCollectionViewController = self.children.first(where: {$0 is CarsCollectionViewController}) as! CarsCollectionViewController
+            
+            carsCollectionViewController.viewModel = CarsCollectionViewModel(carsViewModel: self.viewModel.carsCollectionViewModel)
+
         }
     }
     
@@ -48,10 +57,8 @@ class CategoryDetailsViewController: UIViewController {
          numberOfResultLabel.text = "\(viewModel.carsCount) Results"
         categoryImageView.image = UIImage(named: viewModel.imageName)
         descriptionLabel.text = viewModel.description
-
-        let carsCollectionViewController = children.first(where: {$0 is CarsCollectionViewController}) as! CarsCollectionViewController
-        carsCollectionViewController.viewModel = CarsCollectionViewModel(carsViewModel: viewModel.carsCollectionViewModel)
-
     }
+
+    
  
 }

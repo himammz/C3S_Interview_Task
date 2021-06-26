@@ -10,4 +10,6 @@ target 'C3SInterviewTask' do
    pod 'IQKeyboardManager'
    pod 'MBProgressHUD'
    pod 'SwiftKeychainWrapper'
+   pod 'Kingfisher'
+
 end

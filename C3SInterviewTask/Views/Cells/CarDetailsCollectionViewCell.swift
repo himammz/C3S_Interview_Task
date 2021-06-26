@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class CarDetailsCollectionViewCell: UICollectionViewCell {
 
     
@@ -20,7 +20,8 @@ class CarDetailsCollectionViewCell: UICollectionViewCell {
             companyNameLabel.text = cellViewModel.companyName
             carModelLabel.text = cellViewModel.model
             availableLAbel.text = cellViewModel.availability
- 
+            carImageView.kf.indicatorType = .activity
+            carImageView.kf.setImage(with: cellViewModel.imageURL )
          }
     }
 

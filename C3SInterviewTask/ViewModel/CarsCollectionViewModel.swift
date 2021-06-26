@@ -39,5 +39,13 @@ struct CarCollectionCellViewModel{
         return car.isAvailable == true ?  "Available"  : "Not Available"
     }
     
+    var imageURL : URL{
+        
+        let urlString = car.carImg ?? ""
+        let escapedString = urlString.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? ""
+        return URL(string:escapedString)!
+        
+    }
+
 
 }
