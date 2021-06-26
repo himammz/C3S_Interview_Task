@@ -13,7 +13,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     
     static var instance:LoginViewController{
-        
         let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
          return vc
 
@@ -39,7 +38,8 @@ class LoginViewController: UIViewController {
          guard  isValidUserName() else {
             return
         }
-        saveUserName()
+        saveUser()
+        showNextScreen()
     }
     
     
@@ -52,9 +52,15 @@ class LoginViewController: UIViewController {
         return NSPredicate(format: format, regx).evaluate(with: text)
     }
     
-    func saveUserName(){
+    func saveUser(){
         let text = userNameTextField.text ?? ""
          User.shared = User(userName: text)
+    }
+    
+    func showNextScreen(){
+        let welcomeViewController = WelcomeViewController.instance
+        AppDelegate.rootViewController = welcomeViewController
+
     }
  
  

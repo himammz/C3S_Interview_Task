@@ -13,7 +13,7 @@
         <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="splashViewController" id="BYZ-38-t0r" customClass="SplashViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="Pgj-qq-KKc">
             <objects>
-                <viewController storyboardIdentifier="welcomeViewController" id="I55-wU-Tdo" customClass="WelcomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeViewController" id="I55-wU-Tdo" customClass="WelcomeViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fcz-7R-1Lb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,9 @@
                             <constraint firstItem="nVH-RX-pc2" firstAttribute="centerX" secondItem="fcz-7R-1Lb" secondAttribute="centerX" id="xV1-A2-L95"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeNameLabel" destination="nVH-RX-pc2" id="7WN-GX-ge6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7S-oa-yzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +155,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Sh2-zw-Oft">
             <objects>
-                <navigationController storyboardIdentifier="homeNavigationViewController" id="oTB-DS-99T" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeNavigationController" id="oTB-DS-99T" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSk-F3-pla">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -172,7 +175,7 @@
         <!--Car Style-->
         <scene sceneID="Sss-En-qLM">
             <objects>
-                <collectionViewController id="Ke6-Ee-Rby" customClass="HomeCollectionViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="homeCollectionViewController" id="Ke6-Ee-Rby" customClass="HomeCollectionViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wYO-Yl-lwf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

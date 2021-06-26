@@ -9,6 +9,10 @@ import UIKit
 
  
 class HomeCollectionViewController: UICollectionViewController {
+    
+
+    
+    
     private let sectionInsets = UIEdgeInsets(top: 20,left: 20, bottom: 0,right: 20)
 
     override func viewDidLoad() {
@@ -76,3 +80,17 @@ extension HomeCollectionViewController : UICollectionViewDelegateFlowLayout {
         return sectionInsets
     }
  }
+extension HomeCollectionViewController{
+    static var instance:WelcomeViewController{
+        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeCollectionViewController") as! WelcomeViewController
+         return vc
+
+    }
+    static var Navigationinstance:UINavigationController{
+        
+        let navigationController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationController") as! UINavigationController
+         return navigationController
+
+    }
+
+}

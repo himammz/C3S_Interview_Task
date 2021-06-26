@@ -27,4 +27,14 @@ extension AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
     
+    static var rootViewController:UIViewController?{
+        get{
+            return AppDelegate.shared.window?.rootViewController
+
+        }
+        set{
+            AppDelegate.shared.window?.rootViewController = newValue
+        }
+    }
+    
 }

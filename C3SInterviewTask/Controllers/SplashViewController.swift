@@ -14,8 +14,10 @@ class SplashViewController: UIViewController {
     let loadintTime:Double = 3.0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
- 
+        
+        clearUserIfFreshInstall()
+        User.load()
+
     }
 
     
@@ -24,7 +26,6 @@ class SplashViewController: UIViewController {
         
         loadingIndecator.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + loadintTime ) { [weak self] in
-            
             self?.loadingIndecator.stopAnimating()
             self?.showNextScreen()
         }
@@ -39,21 +40,26 @@ extension SplashViewController{
     
     
     func showNextScreen(){
-        User.load()
-        guard let _ = User.shared else {
-            let loginViewController = LoginViewController.instance
-            AppDelegate.shared.window?.rootViewController = loginViewController
-            return
+        var nextViewController:UIViewController!
+        if let _ = User.shared  {
+              nextViewController = WelcomeViewController.instance
+        }else {
+              nextViewController = LoginViewController.instance
         }
 
-        let homeNAvigationViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationViewController")
-
-                AppDelegate.shared.window?.rootViewController = homeNAvigationViewController
-
-
+        AppDelegate.rootViewController = nextViewController
         
     }
     
+    func clearUserIfFreshInstall(){
+        let userDef  = UserDefaults.standard
+        if  userDef.value(forKey: "opendBefore") == nil {
+            User.remove()
+        }
+
+        userDef.set(true, forKey: "opendBefore")
+
+    }
     
  
 
