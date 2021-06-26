@@ -6,13 +6,18 @@
 //
 
 import UIKit
-
+import SwiftKeychainWrapper
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
     
-    
+    static var instance:LoginViewController{
+        
+        let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
+         return vc
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +39,7 @@ class LoginViewController: UIViewController {
          guard  isValidUserName() else {
             return
         }
-        
-        
+        saveUserName()
     }
     
     
@@ -48,8 +52,14 @@ class LoginViewController: UIViewController {
         return NSPredicate(format: format, regx).evaluate(with: text)
     }
     
-    func saveUserData(){
-        
+    func saveUserName(){
+        let text = userNameTextField.text ?? ""
+         User.shared = User(userName: text)
     }
+ 
+ 
 
 }
+
+
+

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SwiftKeychainWrapper
 class SplashViewController: UIViewController {
 
     @IBOutlet weak var loadingIndecator: UIActivityIndicatorView!
@@ -15,6 +15,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+ 
     }
 
     
@@ -22,13 +23,38 @@ class SplashViewController: UIViewController {
         super.viewDidAppear(animated)
         
         loadingIndecator.startAnimating()
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + loadintTime ) { [weak self] in
-            self?.loadingIndecator.stopAnimating()
             
+            self?.loadingIndecator.stopAnimating()
+            self?.showNextScreen()
         }
+    
     }
     
 
+
 }
 
+extension SplashViewController{
+    
+    
+    func showNextScreen(){
+        User.load()
+        guard let _ = User.shared else {
+            let loginViewController = LoginViewController.instance
+            AppDelegate.shared.window?.rootViewController = loginViewController
+            return
+        }
+
+        let homeNAvigationViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeNavigationViewController")
+
+                AppDelegate.shared.window?.rootViewController = homeNAvigationViewController
+
+
+        
+    }
+    
+    
+ 
+
+}
