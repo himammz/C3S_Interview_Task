@@ -19,7 +19,7 @@ class HomeCollectionViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView.register(CarHomeCollectionViewCell.nib, forCellWithReuseIdentifier: CarHomeCollectionViewCell.reuseIdentifier)
- 
+        navigationController?.navigationBar.tintColor = .white
         loadData()
     }
     func loadData(){
@@ -29,16 +29,7 @@ class HomeCollectionViewController: UICollectionViewController {
             self?.collectionView.reloadData()
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+ 
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfIrems
@@ -54,6 +45,12 @@ class HomeCollectionViewController: UICollectionViewController {
     }
 
     // MARK: UICollectionViewDelegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cellVm = viewModel.itemAt(indexPath: indexPath)
+        let detailsViewController = CategoryDetailsViewController.instance
+        detailsViewController.viewModel = CategoryDetailsViewModel(categoryName: cellVm.categoryName, imageName: cellVm.imageName)
+        navigationController?.pushViewController(detailsViewController, animated: true)
+    }
 
  
 }

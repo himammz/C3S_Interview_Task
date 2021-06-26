@@ -9,8 +9,7 @@ import Foundation
 
 class HomeViewModel{
     var categories:[CarCategoryViewModel] = []
-    let jsonReader = JsonReader()
-    let fileName = "CarCategories"
+     let fileName = "CarCategories"
     var numberOfIrems:Int{
         return categories.count
     }
@@ -28,7 +27,7 @@ class HomeViewModel{
             let obj = JsonReader.decode(type: [String:[CarCategory]].self, data: data) ?? [:]
             
             
-            let categoriesObj = obj.values.first ?? []
+            let categoriesObj = obj["data"] ?? []
             
             self?.categories = categoriesObj.map({(CarCategoryViewModel(category: $0))})
             
