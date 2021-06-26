@@ -34,13 +34,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIq-fU-fxr">
-                                <rect key="frame" x="278" y="199" width="42" height="21"/>
+                                <rect key="frame" x="278.5" y="199" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCp-ov-vkn">
-                                <rect key="frame" x="6" y="199" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="LabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCp-ov-vkn">
+                                <rect key="frame" x="6" y="199" width="248.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,6 +52,7 @@
                             <constraint firstAttribute="trailing" secondItem="kYj-fI-A9w" secondAttribute="trailing" constant="6" id="AIP-HV-Q3J"/>
                             <constraint firstItem="kYj-fI-A9w" firstAttribute="top" secondItem="HJg-YU-7V3" secondAttribute="top" constant="6" id="X22-Qn-xPb"/>
                             <constraint firstItem="88e-dC-acm" firstAttribute="top" secondItem="kYj-fI-A9w" secondAttribute="bottom" constant="12" id="Yey-es-zfD"/>
+                            <constraint firstItem="HIq-fU-fxr" firstAttribute="leading" secondItem="nCp-ov-vkn" secondAttribute="trailing" constant="24" id="eSM-gb-7Xy"/>
                             <constraint firstItem="kYj-fI-A9w" firstAttribute="leading" secondItem="HJg-YU-7V3" secondAttribute="leading" constant="6" id="hcd-ch-Iph"/>
                             <constraint firstItem="88e-dC-acm" firstAttribute="leading" secondItem="kYj-fI-A9w" secondAttribute="leading" id="jtb-Qv-VwJ"/>
                             <constraint firstItem="nCp-ov-vkn" firstAttribute="leading" secondItem="88e-dC-acm" secondAttribute="leading" id="pBE-LD-KzC"/>

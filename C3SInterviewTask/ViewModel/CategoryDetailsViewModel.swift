@@ -19,6 +19,7 @@ class CategoryDetailsViewModel{
     }
 
     let carCategory:CarCategory
+    
     var carsCount:Int{
         return carsCollectionViewModel.count
     }

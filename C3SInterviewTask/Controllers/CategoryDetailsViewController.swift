@@ -48,13 +48,14 @@ class CategoryDetailsViewController: UIViewController {
             
             carsCollectionViewController.viewModel = CarsCollectionViewModel(carsViewModel: self.viewModel.carsCollectionViewModel)
 
+            self.numberOfResultLabel.text = "\(self.viewModel.carsCount) Results"
+
         }
     }
     
     func setData(){
         title = "\(viewModel.categoryName) Details"
         categoryNameLabel.text = viewModel.categoryName
-         numberOfResultLabel.text = "\(viewModel.carsCount) Results"
         categoryImageView.image = UIImage(named: viewModel.imageName)
         descriptionLabel.text = viewModel.description
     }
