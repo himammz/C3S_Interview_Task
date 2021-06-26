@@ -18,7 +18,9 @@ class CategoryDetailsViewController: UIViewController {
     @IBOutlet weak var numberOfResultLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    
+    @IBOutlet weak var collectionContainer: UIView!
+    @IBOutlet weak var tableContainer: UIView!
+
     static var instance:CategoryDetailsViewController{
         let vc =  UIStoryboard(name: "Car", bundle: nil).instantiateViewController(withIdentifier: "categoryDetailsViewController") as! CategoryDetailsViewController
         return vc
@@ -72,5 +74,15 @@ class CategoryDetailsViewController: UIViewController {
     }
     
     
+    @IBAction func gridButtonAction(_ sender: Any) {
+        collectionContainer.isHidden = false
+        tableContainer.isHidden = true
+    }
     
+    @IBAction func listButtonAction(_ sender: Any) {
+        
+        collectionContainer.isHidden = true
+        tableContainer.isHidden = false
+
+    }
 }

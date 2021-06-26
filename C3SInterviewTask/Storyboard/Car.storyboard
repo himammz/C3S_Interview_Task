@@ -149,6 +149,9 @@
                                                                 <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="gridButtonAction:" destination="Tt9-xy-3yP" eventType="touchUpInside" id="mIM-uh-jdh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn1-mz-HbG" customClass="CustomBotton" customModule="C3SInterviewTask" customModuleProvider="target">
                                                         <rect key="frame" x="364" y="10" width="30" height="30"/>
@@ -163,6 +166,9 @@
                                                                 <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="listButtonAction:" destination="Tt9-xy-3yP" eventType="touchUpInside" id="WjS-Wi-DSA"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.74117647060000003" green="0.47843137250000001" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,8 +195,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-S0-TdA">
-                                                <rect key="frame" x="0.0" y="216" width="382" height="400"/>
+                                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-S0-TdA">
+                                                <rect key="frame" x="0.0" y="216" width="414" height="400"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="400" id="EFo-0k-wve"/>
                                                 </constraints>
@@ -245,9 +251,11 @@
                     <connections>
                         <outlet property="categoryImageView" destination="LIm-3Z-fKy" id="bdB-Jg-vyg"/>
                         <outlet property="categoryNameLabel" destination="aw0-6Q-maI" id="Q7O-gF-v7Y"/>
+                        <outlet property="collectionContainer" destination="iAd-bq-IWi" id="brT-xg-Er9"/>
                         <outlet property="collectionHeightConstrain" destination="SIM-Gq-z72" id="uYu-dD-PmF"/>
                         <outlet property="descriptionLabel" destination="wtF-p9-KvH" id="jLP-ej-4B4"/>
                         <outlet property="numberOfResultLabel" destination="aJ9-gK-VHn" id="FGE-TX-l2r"/>
+                        <outlet property="tableContainer" destination="Mbs-S0-TdA" id="Cg1-fk-YAQ"/>
                         <outlet property="tableViewHeightConstrain" destination="EFo-0k-wve" id="g5I-WZ-6nf"/>
                     </connections>
                 </viewController>
@@ -285,7 +293,7 @@
             <objects>
                 <tableViewController id="coU-LJ-pFe" customClass="CompanyTableViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="76B-H7-oYv">
-                        <rect key="frame" x="0.0" y="0.0" width="382" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
