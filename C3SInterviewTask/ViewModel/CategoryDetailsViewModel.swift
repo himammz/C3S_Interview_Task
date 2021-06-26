@@ -8,20 +8,29 @@
 import Foundation
 
 class CategoryDetailsViewModel{
-    let categoryName:String
-    let imageName:String
+    var categoryName:String{
+        return carCategory.name
+    }
+    var imageName:String{
+        return carCategory.imageName ?? ""
+    }
+    var description:String{
+        return carCategory.description ?? ""
+    }
+
+    let carCategory:CarCategory
     var carsCount:Int{
-        return cars.count
+        return carsCollectionViewModel.count
     }
     
 
-    var cars:[Car] = []
+    var carsCollectionViewModel:[CarCollectionCellViewModel] = []
     let fileName = "carsRecords"
     
     
-    init (categoryName:String,imageName:String){
-        self.categoryName = categoryName
-        self.imageName = imageName
+    init (carCategory:CarCategory){
+        self.carCategory = carCategory
+        
     }
     
     
@@ -43,7 +52,13 @@ class CategoryDetailsViewModel{
     }
     
     func filterCars( allCars:[Car]) {
-       cars = allCars.filter({$0.style == categoryName})
+       let filterdCars = allCars.filter({$0.style == categoryName})
+        carsCollectionViewModel = filterdCars.map({
+            CarCollectionCellViewModel(car: $0)
+        })
+        
+        
+        
     }
     
     

@@ -23,64 +23,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9C02769B-F50F-45F7-8F45-913DC94D58F1"
-            shouldBeEnabled = "Yes"
+            uuid = "66DAF3B3-9410-4691-A5E1-87D5B02B3E84"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "C3SInterviewTask/ViewModel/CategoryDetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "laodData(completion:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "filterCars(allCars:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9C02769B-F50F-45F7-8F45-913DC94D58F1 - 18df5e1fbc9d09e2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "C3SInterviewTask.CategoryDetailsViewModel.laodData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "C3SInterviewTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ibrahim/Desktop/C3SInterviewTask/C3SInterviewTask/ViewModel/CategoryDetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "9C02769B-F50F-45F7-8F45-913DC94D58F1 - 18df5e1fbc9d09e2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "C3SInterviewTask.CategoryDetailsViewModel.laodData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "C3SInterviewTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ibrahim/Desktop/C3SInterviewTask/C3SInterviewTask/ViewModel/CategoryDetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "9C02769B-F50F-45F7-8F45-913DC94D58F1 - dcb799f1470d319f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in C3SInterviewTask.CategoryDetailsViewModel.laodData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "C3SInterviewTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ibrahim/Desktop/C3SInterviewTask/C3SInterviewTask/ViewModel/CategoryDetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "234">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "427CF509-EFE5-40A5-8376-6F8F69C5C83D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C3SInterviewTask/Controllers/CategoryDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "setData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16AB4520-A302-4EC7-8D99-EF9E4437B579"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "C3SInterviewTask/Views/Cells/CarDetailsCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "cellViewModel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

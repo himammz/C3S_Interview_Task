@@ -10,11 +10,13 @@ import UIKit
 class CategoryDetailsViewController: UIViewController {
 
     
+    @IBOutlet weak var collectionHeightConstrain: NSLayoutConstraint!
     @IBOutlet weak var categoryImageView: UIImageView!
     
     @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var numberOfResultLabel: UILabel!
-    
+    @IBOutlet weak var descriptionLabel: UILabel!
+
     
     static var instance:CategoryDetailsViewController{
         let vc =  UIStoryboard(name: "Car", bundle: nil).instantiateViewController(withIdentifier: "categoryDetailsViewController") as! CategoryDetailsViewController
@@ -27,12 +29,15 @@ class CategoryDetailsViewController: UIViewController {
         super.viewDidLoad()
         categoryImageView.layer.cornerRadius = categoryImageView.frame.width / 2
         loadData()
+        print (children.first)
      }
     
     
     
     func loadData(){
+        showHUD()
         viewModel.laodData { [weak self] in
+            self?.hideHUD()
             self?.setData()
         }
     }
@@ -42,6 +47,10 @@ class CategoryDetailsViewController: UIViewController {
         categoryNameLabel.text = viewModel.categoryName
          numberOfResultLabel.text = "\(viewModel.carsCount) Results"
         categoryImageView.image = UIImage(named: viewModel.imageName)
+        descriptionLabel.text = viewModel.description
+
+        let carsCollectionViewController = children.first(where: {$0 is CarsCollectionViewController}) as! CarsCollectionViewController
+        carsCollectionViewController.viewModel = CarsCollectionViewModel(carsViewModel: viewModel.carsCollectionViewModel)
 
     }
  

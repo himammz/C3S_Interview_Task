@@ -48,7 +48,7 @@ class HomeCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cellVm = viewModel.itemAt(indexPath: indexPath)
         let detailsViewController = CategoryDetailsViewController.instance
-        detailsViewController.viewModel = CategoryDetailsViewModel(categoryName: cellVm.categoryName, imageName: cellVm.imageName)
+        detailsViewController.viewModel = CategoryDetailsViewModel(carCategory: cellVm.category)
         navigationController?.pushViewController(detailsViewController, animated: true)
     }
 
