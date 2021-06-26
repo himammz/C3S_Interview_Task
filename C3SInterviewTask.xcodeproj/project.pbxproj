@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		0F7D2840268623EE00AE1983 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283F268623EE00AE1983 /* CardView.swift */; };
 		0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */; };
 		0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D28442686431C00AE1983 /* CustomBotton.swift */; };
+		4C6A2BB18535A0C60FD7A6DB /* Pods_C3SInterviewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,9 @@
 		0F7D283F268623EE00AE1983 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		0F7D28442686431C00AE1983 /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
+		4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.debug.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.debug.xcconfig"; sourceTree = "<group>"; };
+		B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C3SInterviewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.release.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6A2BB18535A0C60FD7A6DB /* Pods_C3SInterviewTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				0F7D281A268602B300AE1983 /* C3SInterviewTask */,
 				0F7D2819268602B300AE1983 /* Products */,
+				A17E6A81EE10BD8A8B110AD4 /* Pods */,
+				2C11CB27F35F2D58AD28BF93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,23 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		2C11CB27F35F2D58AD28BF93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A17E6A81EE10BD8A8B110AD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */,
+				B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F7D282C268602B400AE1983 /* Build configuration list for PBXNativeTarget "C3SInterviewTask" */;
 			buildPhases = (
+				9B21B53ADE75A1F046550376 /* [CP] Check Pods Manifest.lock */,
 				0F7D2814268602B300AE1983 /* Sources */,
 				0F7D2815268602B300AE1983 /* Frameworks */,
 				0F7D2816268602B300AE1983 /* Resources */,
+				9E060A4B26120578D3C96247 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +215,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B21B53ADE75A1F046550376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-C3SInterviewTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E060A4B26120578D3C96247 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F7D2814268602B300AE1983 /* Sources */ = {
@@ -280,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -335,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,6 +415,7 @@
 		};
 		0F7D282D268602B400AE1983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +435,7 @@
 		};
 		0F7D282E268602B400AE1983 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

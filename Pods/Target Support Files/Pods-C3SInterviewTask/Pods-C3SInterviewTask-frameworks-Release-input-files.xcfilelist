@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework
