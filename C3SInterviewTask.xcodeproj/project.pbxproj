@@ -20,6 +20,7 @@
 		0F7D283E2686235B00AE1983 /* CarHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D283C2686235B00AE1983 /* CarHomeCollectionViewCell.xib */; };
 		0F7D2840268623EE00AE1983 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D283F268623EE00AE1983 /* CardView.swift */; };
 		0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */; };
+		0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D28442686431C00AE1983 /* CustomBotton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0F7D283C2686235B00AE1983 /* CarHomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarHomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0F7D283F268623EE00AE1983 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		0F7D28442686431C00AE1983 /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				0F7D283826860E6600AE1983 /* CustomTextField.swift */,
 				0F7D283F268623EE00AE1983 /* CardView.swift */,
+				0F7D28442686431C00AE1983 /* CustomBotton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				0F7D2820268602B300AE1983 /* SplashViewController.swift in Sources */,
 				0F7D283D2686235B00AE1983 /* CarHomeCollectionViewCell.swift in Sources */,
 				0F7D281C268602B300AE1983 /* AppDelegate.swift in Sources */,
+				0F7D28452686431C00AE1983 /* CustomBotton.swift in Sources */,
 				0F7D2843268625FB00AE1983 /* HomeCollectionViewController.swift in Sources */,
 				0F7D281E268602B300AE1983 /* SceneDelegate.swift in Sources */,
 				0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */,
