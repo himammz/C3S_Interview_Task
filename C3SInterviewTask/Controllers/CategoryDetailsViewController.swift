@@ -21,6 +21,11 @@ class CategoryDetailsViewController: UIViewController {
     @IBOutlet weak var collectionContainer: UIView!
     @IBOutlet weak var tableContainer: UIView!
 
+    @IBOutlet weak var bottomCollectionSpace: NSLayoutConstraint!
+    @IBOutlet weak var bottomTableSpace: NSLayoutConstraint!
+
+    
+    
     static var instance:CategoryDetailsViewController{
         let vc =  UIStoryboard(name: "Car", bundle: nil).instantiateViewController(withIdentifier: "categoryDetailsViewController") as! CategoryDetailsViewController
         return vc
@@ -77,12 +82,16 @@ class CategoryDetailsViewController: UIViewController {
     @IBAction func gridButtonAction(_ sender: Any) {
         collectionContainer.isHidden = false
         tableContainer.isHidden = true
+        bottomCollectionSpace.priority = .required
+        bottomTableSpace.priority = .defaultLow
     }
     
     @IBAction func listButtonAction(_ sender: Any) {
         
         collectionContainer.isHidden = true
         tableContainer.isHidden = false
+        bottomCollectionSpace.priority = .defaultLow
+        bottomTableSpace.priority = .required
 
     }
 }

@@ -190,7 +190,7 @@
                                                 </connections>
                                             </containerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtF-p9-KvH">
-                                                <rect key="frame" x="8" y="624" width="406" height="0.0"/>
+                                                <rect key="frame" x="8" y="624" width="398" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -217,7 +217,7 @@
                                             <constraint firstItem="iAd-bq-IWi" firstAttribute="leading" secondItem="7a2-oZ-k2C" secondAttribute="leading" id="WDx-NT-5DR"/>
                                             <constraint firstAttribute="trailing" secondItem="iAd-bq-IWi" secondAttribute="trailing" id="XV4-4x-P8y"/>
                                             <constraint firstAttribute="trailing" secondItem="m3O-Gz-jFa" secondAttribute="trailing" id="aLZ-1l-Cnl"/>
-                                            <constraint firstItem="wtF-p9-KvH" firstAttribute="top" secondItem="Mbs-S0-TdA" secondAttribute="bottom" constant="8" id="fll-OQ-FRZ"/>
+                                            <constraint firstItem="wtF-p9-KvH" firstAttribute="top" secondItem="Mbs-S0-TdA" secondAttribute="bottom" priority="999" constant="8" id="fll-OQ-FRZ"/>
                                             <constraint firstItem="Bn8-Lc-oQm" firstAttribute="top" secondItem="m3O-Gz-jFa" secondAttribute="bottom" id="fom-5U-lgp"/>
                                             <constraint firstAttribute="trailing" secondItem="Mbs-S0-TdA" secondAttribute="trailing" id="iny-hJ-ahX"/>
                                             <constraint firstItem="m3O-Gz-jFa" firstAttribute="leading" secondItem="7a2-oZ-k2C" secondAttribute="leading" id="jAc-H1-xLK"/>
@@ -242,13 +242,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="c7r-4j-t9H" firstAttribute="trailing" secondItem="FzJ-vJ-Bto" secondAttribute="trailing" id="E7W-EZ-Xxy"/>
-                            <constraint firstItem="c7r-4j-t9H" firstAttribute="trailing" secondItem="wtF-p9-KvH" secondAttribute="trailing" id="YEd-V7-da5"/>
                             <constraint firstItem="FzJ-vJ-Bto" firstAttribute="top" secondItem="c7r-4j-t9H" secondAttribute="top" id="ZBK-bv-eph"/>
                             <constraint firstItem="FzJ-vJ-Bto" firstAttribute="leading" secondItem="c7r-4j-t9H" secondAttribute="leading" id="hxl-eA-veH"/>
                             <constraint firstItem="c7r-4j-t9H" firstAttribute="bottom" secondItem="FzJ-vJ-Bto" secondAttribute="bottom" id="ke7-Cc-YHw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomCollectionSpace" destination="4pm-el-ZTa" id="BrX-Sl-nSx"/>
+                        <outlet property="bottomTableSpace" destination="fll-OQ-FRZ" id="5xX-pe-kiU"/>
                         <outlet property="categoryImageView" destination="LIm-3Z-fKy" id="bdB-Jg-vyg"/>
                         <outlet property="categoryNameLabel" destination="aw0-6Q-maI" id="Q7O-gF-v7Y"/>
                         <outlet property="collectionContainer" destination="iAd-bq-IWi" id="brT-xg-Er9"/>
@@ -292,7 +293,7 @@
         <scene sceneID="JR2-00-Jg0">
             <objects>
                 <tableViewController id="coU-LJ-pFe" customClass="CompanyTableViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="76B-H7-oYv">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="132" sectionHeaderHeight="28" sectionFooterHeight="28" id="76B-H7-oYv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

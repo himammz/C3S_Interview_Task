@@ -72,7 +72,7 @@
                 <constraints>
                     <constraint firstItem="aEf-rp-qpb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="E7L-Sw-1lu"/>
                     <constraint firstItem="aEf-rp-qpb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IeS-cR-Q7i"/>
-                    <constraint firstAttribute="bottom" secondItem="aEf-rp-qpb" secondAttribute="bottom" constant="8" id="qmD-Xa-z9F"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aEf-rp-qpb" secondAttribute="bottom" constant="8" id="qmD-Xa-z9F"/>
                     <constraint firstAttribute="trailing" secondItem="aEf-rp-qpb" secondAttribute="trailing" constant="8" id="wJO-fe-3ID"/>
                 </constraints>
             </tableViewCellContentView>
