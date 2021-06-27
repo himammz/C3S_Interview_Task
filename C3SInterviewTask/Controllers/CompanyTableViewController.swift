@@ -66,6 +66,8 @@ class CompanyTableViewController: UITableViewController {
     }
     
     
+    // MARK: - Table view delegate
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sectionVm = viewModel?.sectionAt(index: indexPath.section)
         
@@ -74,15 +76,12 @@ class CompanyTableViewController: UITableViewController {
         tableView.reloadSections(indexSet, with: .none)
     }
     
-    // MARK: - Table view delegate
 
     override  func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         self.viewWillLayoutSubviews()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-    }
 
     
     

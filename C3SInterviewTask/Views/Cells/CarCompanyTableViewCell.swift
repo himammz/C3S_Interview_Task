@@ -21,7 +21,7 @@ class CarCompanyTableViewCell: UITableViewCell {
     var cellViewModel:CompanySectionViewModel!{
         didSet{
             companyName.text = cellViewModel.companyName
-            numberOfCarsLabel.text = "\(cellViewModel.numberOfItems)"
+            numberOfCarsLabel.text = "\(cellViewModel.numberOfItems) cars"
             companyImage.kf.indicatorType = .activity
             companyImage.kf.setImage(with: cellViewModel.logoURL)
         }
