@@ -14,31 +14,46 @@ struct CompanyTableViewModel{
         return companiesViewModel.count
     }
     
-    func itemAt(indexPath:IndexPath)-> CompanySectionViewModel{
-        let companyVm = companiesViewModel[indexPath.section]
+    
+    
+    func sectionAt(index:Int)-> CompanySectionViewModel{
+        let companyVm = companiesViewModel[index]
         return companyVm
     }
+    func rowAt(section:Int, row:Int)-> CarCellCellViewModel{
+        let companyVm = companiesViewModel[section].itemAt(index: row)
+        return companyVm
+    }
+    
     
 }
 
 
-struct CompanySectionViewModel{
+class CompanySectionViewModel{
     var isOpen:Bool = false
     var cars:[CarCellCellViewModel] = []
     
+    init (carsCellViewModels: [CarCellCellViewModel]){
+        cars = carsCellViewModels
+    }
     var numberOfItems:Int{
         return cars.count
     }
     var companyName:String{
         return cars.first!.companyName
     }
-
+    
     
     var logoURL:URL{
         return cars.first!.logoURL
-     }
-
+    }
+    func itemAt(index:Int)-> CarCellCellViewModel{
+        let car = cars[index]
+        return car
+    }
+    
+    
 }
 
- 
+
 

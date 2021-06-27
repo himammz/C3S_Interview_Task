@@ -73,7 +73,7 @@ class CategoryDetailsViewModel{
         let groupedCars = Dictionary(grouping: cars, by: {$0.carCompany}).values
         
        let companySections =  groupedCars.map({
-            CompanySectionViewModel(isOpen: false, cars: $0.map({
+            CompanySectionViewModel(carsCellViewModels: $0.map({
                 CarCellCellViewModel(car: $0)
             }))
         })
