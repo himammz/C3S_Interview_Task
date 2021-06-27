@@ -25,6 +25,7 @@ class RentDateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerDate.minimumDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())
         pickerDateChanged(pickerDate)
     }
     

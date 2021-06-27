@@ -19,7 +19,7 @@ class CompanyTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(CarTableViewCell.nib, forCellReuseIdentifier: CarTableViewCell.reuseIdentifier)
-
+        
         tableView.register(CarCompanyTableViewCell.nib, forCellReuseIdentifier: CarCompanyTableViewCell.reuseIdentifier)
     }
     
@@ -27,7 +27,7 @@ class CompanyTableViewController: UITableViewController {
         super.updateViewConstraints()
         (parent as? CategoryDetailsViewController)?.tableViewHeightConstrain.constant = self.tableView.contentSize.height
     }
-
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,7 +49,7 @@ class CompanyTableViewController: UITableViewController {
             
             cell.cellViewModel = viewModel?.sectionAt(index: indexPath.section)
             
- 
+            
             return cell
             
             
@@ -58,8 +58,8 @@ class CompanyTableViewController: UITableViewController {
             
             let item = viewModel?.rowAt(section: indexPath.section ,row: (indexPath.row - 1))
             cell.cellViewModel = item
- 
-             return cell
+            
+            return cell
         }
         
         
@@ -67,22 +67,35 @@ class CompanyTableViewController: UITableViewController {
     
     
     // MARK: - Table view delegate
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionVm = viewModel?.sectionAt(index: indexPath.section)
+        if indexPath.row == 0 {
+            let sectionVm = viewModel?.sectionAt(index: indexPath.section)
+            sectionVm?.isOpen = !(sectionVm?.isOpen ?? true)
+            let indexSet = IndexSet(integer: indexPath.section)
+            tableView.reloadSections(indexSet, with: .none)
+            
+        }else {
+            let vm = viewModel?.rowAt(section: indexPath.section, row: indexPath.row - 1)
+            
+            guard vm?.isAvailable == true else {
+                return
+            }
+            let rentViewController = RentDateViewController.instance
+            rentViewController.viewModel = RentViewModel(carModel: vm?.model ?? "" )
+            
+            present(rentViewController, animated: true, completion: nil)
+        }
         
-        sectionVm?.isOpen = !(sectionVm?.isOpen ?? true)
-        let indexSet = IndexSet(integer: indexPath.section)
-        tableView.reloadSections(indexSet, with: .none)
     }
     
-
+    
     override  func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         self.viewWillLayoutSubviews()
     }
     
-        
-
+    
+    
     
     
 }
