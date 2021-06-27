@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="4122" y="-733"/>
         </scene>
-        <!--View Controller-->
+        <!--Rent Date View Controller-->
         <scene sceneID="y3j-1X-LFd">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="8WO-w9-H7Y" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="8WO-w9-H7Y" customClass="RentDateViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fPL-UF-biG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,6 +311,9 @@
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Ki8-tn-CfX">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        <connections>
+                                            <action selector="pickerDateChanged:" destination="8WO-w9-H7Y" eventType="valueChanged" id="A3X-no-8Ex"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -356,7 +359,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="7pK-Pg-S2C" firstAttribute="centerY" secondItem="KhP-UI-2Ki" secondAttribute="centerY" id="3qO-Dm-i2L"/>
                                     <constraint firstAttribute="trailing" secondItem="6cR-G2-mtu" secondAttribute="trailing" constant="12" id="J4U-6g-q1n"/>
@@ -381,6 +384,9 @@
                             <constraint firstItem="97e-cv-yeQ" firstAttribute="top" secondItem="ys3-Jq-pib" secondAttribute="bottom" id="ee3-sx-8jJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberofDaysTextField" destination="7pK-Pg-S2C" id="Viz-Z0-aY6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyG-Rd-JIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
