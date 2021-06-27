@@ -50,8 +50,15 @@ class CarsCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         
+       let vm =  viewModel?.itemAt(indexPath: indexPath)
+        
+        guard vm?.isAvailable == true else {
+            return
+        }
+        let rentViewController = RentDateViewController.instance
+        rentViewController.viewModel = RentViewModel(carModel: vm?.model ?? "" )
  
- 
+        present(rentViewController, animated: true, completion: nil)
     }
   
 

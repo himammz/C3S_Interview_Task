@@ -35,6 +35,8 @@
 		0FAA51E72687BBC900CDAA40 /* CarsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51E62687BBC900CDAA40 /* CarsCollectionViewController.swift */; };
 		0FAA51E92687BC8F00CDAA40 /* CarsCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA51E82687BC8F00CDAA40 /* CarsCollectionViewModel.swift */; };
 		0FCDD8EB2688BFA80085A1A7 /* RentDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8E92688BFA80085A1A7 /* RentDB.xcdatamodeld */; };
+		0FCDD8EE2688C0EF0085A1A7 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */; };
+		0FCDD8F02688D9280085A1A7 /* RentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */; };
 		0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */; };
 		0FD257E02687489200D72F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DF2687489200D72F4B /* User.swift */; };
 		0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E226875C5A00D72F4B /* CarCategory.swift */; };
@@ -78,6 +80,8 @@
 		0FAA51E62687BBC900CDAA40 /* CarsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewController.swift; sourceTree = "<group>"; };
 		0FAA51E82687BC8F00CDAA40 /* CarsCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewModel.swift; sourceTree = "<group>"; };
 		0FCDD8EA2688BFA80085A1A7 /* RentDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RentDB.xcdatamodel; sourceTree = "<group>"; };
+		0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewModel.swift; sourceTree = "<group>"; };
 		0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FD257DF2687489200D72F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FD257E226875C5A00D72F4B /* CarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCategory.swift; sourceTree = "<group>"; };
@@ -107,7 +111,6 @@
 		0F7D280F268602B300AE1983 = {
 			isa = PBXGroup;
 			children = (
-				0FCDD8E92688BFA80085A1A7 /* RentDB.xcdatamodeld */,
 				0F7D281A268602B300AE1983 /* C3SInterviewTask */,
 				0F7D2819268602B300AE1983 /* Products */,
 				A17E6A81EE10BD8A8B110AD4 /* Pods */,
@@ -190,9 +193,19 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0FCDD8EC2688C0780085A1A7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDD8E92688BFA80085A1A7 /* RentDB.xcdatamodeld */,
+				0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		0FD257E126875C4700D72F4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0FCDD8EC2688C0780085A1A7 /* CoreData */,
 				0FD257E82687635E00D72F4B /* JsonFiles */,
 				0FD257DF2687489200D72F4B /* User.swift */,
 				0FD257E226875C5A00D72F4B /* CarCategory.swift */,
@@ -218,6 +231,7 @@
 				0FAA51E02687A7FC00CDAA40 /* CategoryDetailsViewModel.swift */,
 				0FAA51E82687BC8F00CDAA40 /* CarsCollectionViewModel.swift */,
 				0F04AA5F2687DFEF0063EE7D /* CompanyTableViewModel.swift */,
+				0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -375,7 +389,9 @@
 				0F04AA662688B6990063EE7D /* RentDateViewController.swift in Sources */,
 				0F04AA6326889DD90063EE7D /* CarTableViewCell.swift in Sources */,
 				0FCDD8EB2688BFA80085A1A7 /* RentDB.xcdatamodeld in Sources */,
+				0FCDD8EE2688C0EF0085A1A7 /* CoreDataController.swift in Sources */,
 				0FAA51E72687BBC900CDAA40 /* CarsCollectionViewController.swift in Sources */,
+				0FCDD8F02688D9280085A1A7 /* RentViewModel.swift in Sources */,
 				0FAA51E42687B9AF00CDAA40 /* CarDetailsCollectionViewCell.swift in Sources */,
 				0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */,
 				0FD257E7268762EC00D72F4B /* JsonReader.swift in Sources */,

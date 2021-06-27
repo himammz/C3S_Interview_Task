@@ -38,7 +38,9 @@ struct CarCellCellViewModel{
     var availability:String{
         return car.isAvailable == true ?  "Available"  : "Not Available"
     }
-    
+    var isAvailable:Bool {
+        return car.isAvailable ?? false
+    }
     var imageURL : URL{
         
         let urlString = car.carImg ?? ""

@@ -121,23 +121,14 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKX-Lv-Dlm">
-                                                        <rect key="frame" x="368" y="0.0" width="46" height="30"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <connections>
-                                                            <segue destination="8WO-w9-H7Y" kind="presentation" id="tbx-R0-mcA"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="X8H-Y2-atd" firstAttribute="top" secondItem="m3O-Gz-jFa" secondAttribute="top" constant="18" id="9Og-cT-M1k"/>
-                                                    <constraint firstAttribute="trailing" secondItem="yKX-Lv-Dlm" secondAttribute="trailing" id="EVD-nr-OES"/>
                                                     <constraint firstItem="aJ9-gK-VHn" firstAttribute="top" secondItem="aw0-6Q-maI" secondAttribute="bottom" constant="12" id="Juc-IO-YFT"/>
                                                     <constraint firstItem="X8H-Y2-atd" firstAttribute="leading" secondItem="m3O-Gz-jFa" secondAttribute="leading" constant="18" id="Lxf-su-fwS"/>
                                                     <constraint firstItem="aw0-6Q-maI" firstAttribute="centerY" secondItem="X8H-Y2-atd" secondAttribute="centerY" id="QOv-gn-XEQ"/>
                                                     <constraint firstItem="aJ9-gK-VHn" firstAttribute="leading" secondItem="aw0-6Q-maI" secondAttribute="leading" id="VlX-od-doF"/>
-                                                    <constraint firstItem="yKX-Lv-Dlm" firstAttribute="top" secondItem="m3O-Gz-jFa" secondAttribute="top" id="d5B-Dj-kJR"/>
                                                     <constraint firstItem="aw0-6Q-maI" firstAttribute="leading" secondItem="X8H-Y2-atd" secondAttribute="trailing" constant="12" id="vpF-aG-fIF"/>
                                                     <constraint firstAttribute="bottom" secondItem="X8H-Y2-atd" secondAttribute="bottom" constant="18" id="ykf-J2-5Ef"/>
                                                 </constraints>
@@ -301,7 +292,7 @@
         <!--Rent Date View Controller-->
         <scene sceneID="y3j-1X-LFd">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="8WO-w9-H7Y" customClass="RentDateViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rentDateViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="8WO-w9-H7Y" customClass="RentDateViewController" customModule="C3SInterviewTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fPL-UF-biG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,6 +348,9 @@
                                         <state key="normal" title="Save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveAction" destination="8WO-w9-H7Y" eventType="touchUpInside" id="OZc-0n-uQK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -386,6 +380,7 @@
                     </view>
                     <connections>
                         <outlet property="numberofDaysTextField" destination="7pK-Pg-S2C" id="Viz-Z0-aY6"/>
+                        <outlet property="pickerDate" destination="Ki8-tn-CfX" id="7yY-Rs-ItH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyG-Rd-JIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
