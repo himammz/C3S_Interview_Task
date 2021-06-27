@@ -37,6 +37,7 @@
 		0FCDD8EB2688BFA80085A1A7 /* RentDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8E92688BFA80085A1A7 /* RentDB.xcdatamodeld */; };
 		0FCDD8EE2688C0EF0085A1A7 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */; };
 		0FCDD8F02688D9280085A1A7 /* RentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */; };
+		0FCDD8F22688E5340085A1A7 /* SavedCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8F12688E5340085A1A7 /* SavedCarsViewController.swift */; };
 		0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */; };
 		0FD257E02687489200D72F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DF2687489200D72F4B /* User.swift */; };
 		0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E226875C5A00D72F4B /* CarCategory.swift */; };
@@ -82,6 +83,7 @@
 		0FCDD8EA2688BFA80085A1A7 /* RentDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RentDB.xcdatamodel; sourceTree = "<group>"; };
 		0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewModel.swift; sourceTree = "<group>"; };
+		0FCDD8F12688E5340085A1A7 /* SavedCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCarsViewController.swift; sourceTree = "<group>"; };
 		0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FD257DF2687489200D72F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FD257E226875C5A00D72F4B /* CarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCategory.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				0FAA51DE2687A75900CDAA40 /* CategoryDetailsViewController.swift */,
 				0FAA51E62687BBC900CDAA40 /* CarsCollectionViewController.swift */,
 				0F04AA652688B6990063EE7D /* RentDateViewController.swift */,
+				0FCDD8F12688E5340085A1A7 /* SavedCarsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				0FD257E02687489200D72F4B /* User.swift in Sources */,
 				0FD257F126877E6A00D72F4B /* HomeViewModel.swift in Sources */,
 				0F7D283926860E6600AE1983 /* CustomTextField.swift in Sources */,
+				0FCDD8F22688E5340085A1A7 /* SavedCarsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

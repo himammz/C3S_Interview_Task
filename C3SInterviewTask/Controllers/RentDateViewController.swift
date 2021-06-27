@@ -32,6 +32,9 @@ class RentDateViewController: UIViewController {
     
     
     @IBAction func saveAction(){
+        guard numberofDaysTextField.text?.isEmpty == false else {
+            return
+        }
         viewModel.numberOfDays =  Int(numberofDaysTextField.text ?? "" ) ?? 0
         viewModel.storeRecord()
         dismiss(animated: true, completion: nil)

@@ -17,7 +17,7 @@ class RentViewModel{
     var carModel:String
     init (carModel:String){
         self.carModel = carModel
-        print (fetchAll())
+        print (fetchAll()?.count)
     }
      func storeRecord(){
         let backgroundContext = coreDataController.backgroundContext!
