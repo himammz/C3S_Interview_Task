@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,13 +21,45 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEf-rp-qpb" customClass="CardView" customModule="C3SInterviewTask" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="304" height="116"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-s0-LoW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Z4-jD-ThM" customClass="CardView" customModule="C3SInterviewTask" customModuleProvider="target">
                                 <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-s0-LoW">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="8dJ-2r-lLV"/>
+                                            <constraint firstAttribute="width" constant="100" id="di5-Dq-hAf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="8dJ-2r-lLV"/>
-                                    <constraint firstAttribute="width" constant="100" id="di5-Dq-hAf"/>
+                                    <constraint firstItem="UrX-s0-LoW" firstAttribute="leading" secondItem="6Z4-jD-ThM" secondAttribute="leading" id="74O-aG-9nV"/>
+                                    <constraint firstAttribute="bottom" secondItem="UrX-s0-LoW" secondAttribute="bottom" id="Bz4-2k-bS8"/>
+                                    <constraint firstItem="UrX-s0-LoW" firstAttribute="top" secondItem="6Z4-jD-ThM" secondAttribute="top" id="Dhc-mg-WcH"/>
+                                    <constraint firstAttribute="trailing" secondItem="UrX-s0-LoW" secondAttribute="trailing" id="N8D-eS-fug"/>
+                                    <constraint firstItem="UrX-s0-LoW" firstAttribute="leading" secondItem="6Z4-jD-ThM" secondAttribute="leading" id="RvP-dW-FVx"/>
+                                    <constraint firstItem="UrX-s0-LoW" firstAttribute="top" secondItem="6Z4-jD-ThM" secondAttribute="top" id="dqX-xg-FQS"/>
+                                    <constraint firstAttribute="bottom" secondItem="UrX-s0-LoW" secondAttribute="bottom" id="eLr-FB-noi"/>
                                 </constraints>
-                            </imageView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBU-we-KBn">
                                 <rect key="frame" x="116" y="47.5" width="43.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -43,12 +76,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Cac-p5-Wi0" secondAttribute="trailing" constant="8" id="3X0-0B-L4f"/>
-                            <constraint firstItem="UrX-s0-LoW" firstAttribute="leading" secondItem="aEf-rp-qpb" secondAttribute="leading" constant="8" id="4pG-dm-PCx"/>
-                            <constraint firstAttribute="bottom" secondItem="UrX-s0-LoW" secondAttribute="bottom" constant="8" id="IVI-BV-afk"/>
+                            <constraint firstAttribute="bottom" secondItem="6Z4-jD-ThM" secondAttribute="bottom" constant="8" id="Jo5-o8-07q"/>
                             <constraint firstAttribute="bottom" secondItem="Cac-p5-Wi0" secondAttribute="bottom" constant="8" id="MPR-1z-x9R"/>
-                            <constraint firstItem="UrX-s0-LoW" firstAttribute="top" secondItem="aEf-rp-qpb" secondAttribute="top" constant="8" id="U0q-yG-q9e"/>
-                            <constraint firstItem="MBU-we-KBn" firstAttribute="centerY" secondItem="UrX-s0-LoW" secondAttribute="centerY" id="lFA-U7-RaR"/>
-                            <constraint firstItem="MBU-we-KBn" firstAttribute="leading" secondItem="UrX-s0-LoW" secondAttribute="trailing" constant="8" id="tVt-cw-EkE"/>
+                            <constraint firstItem="6Z4-jD-ThM" firstAttribute="top" secondItem="aEf-rp-qpb" secondAttribute="top" constant="8" id="QUs-72-1eh"/>
+                            <constraint firstItem="MBU-we-KBn" firstAttribute="leading" secondItem="6Z4-jD-ThM" secondAttribute="trailing" constant="8" id="WEL-0J-rLZ"/>
+                            <constraint firstItem="MBU-we-KBn" firstAttribute="centerY" secondItem="6Z4-jD-ThM" secondAttribute="centerY" id="hHo-A8-q7L"/>
+                            <constraint firstItem="6Z4-jD-ThM" firstAttribute="leading" secondItem="aEf-rp-qpb" secondAttribute="leading" constant="8" id="z3z-Es-gQY"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -86,4 +119,9 @@
             <point key="canvasLocation" x="53.623188405797109" y="37.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

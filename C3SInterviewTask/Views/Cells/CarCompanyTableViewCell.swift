@@ -13,7 +13,7 @@ class CarCompanyTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfCarsLabel: UILabel!
     @IBOutlet weak var companyImage: UIImageView!
     
-    static let reuseIdentifier = String(describing: self)
+    static let reuseIdentifier =  String(describing: CarCompanyTableViewCell.self)
     static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
@@ -28,7 +28,8 @@ class CarCompanyTableViewCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        companyImage.layer.cornerRadius = companyImage.frame.width / 2
+        
     }
     
     

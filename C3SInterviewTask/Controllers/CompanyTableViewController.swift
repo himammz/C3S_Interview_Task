@@ -18,10 +18,16 @@ class CompanyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(CarTableViewCell.nib, forCellReuseIdentifier: CarTableViewCell.reuseIdentifier)
+
         tableView.register(CarCompanyTableViewCell.nib, forCellReuseIdentifier: CarCompanyTableViewCell.reuseIdentifier)
-        
     }
     
+    override func viewWillLayoutSubviews() {
+        super.updateViewConstraints()
+        (parent as? CategoryDetailsViewController)?.tableViewHeightConstrain.constant = self.tableView.contentSize.height
+    }
+
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,19 +49,16 @@ class CompanyTableViewController: UITableViewController {
             
             cell.cellViewModel = viewModel?.sectionAt(index: indexPath.section)
             
-            (parent as? CategoryDetailsViewController)?.tableViewHeightConstrain.constant = tableView.contentSize.height
-
+ 
             return cell
             
             
         }else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "carCellDetails", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.reuseIdentifier, for: indexPath) as! CarTableViewCell
             
             let item = viewModel?.rowAt(section: indexPath.section ,row: (indexPath.row - 1))
-            cell.textLabel?.text =  item?.model
-            cell.detailTextLabel?.text = item?.availability
-            (parent as? CategoryDetailsViewController)?.tableViewHeightConstrain.constant = tableView.contentSize.height
-
+            cell.cellViewModel = item
+ 
              return cell
         }
         
@@ -70,6 +73,17 @@ class CompanyTableViewController: UITableViewController {
         let indexSet = IndexSet(integer: indexPath.section)
         tableView.reloadSections(indexSet, with: .none)
     }
+    
+    // MARK: - Table view delegate
+
+    override  func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        self.viewWillLayoutSubviews()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+
     
     
 }

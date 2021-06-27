@@ -10,6 +10,8 @@
 		0F04AA5D2687DE9E0063EE7D /* CarCompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */; };
 		0F04AA5E2687DE9E0063EE7D /* CarCompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F04AA5C2687DE9E0063EE7D /* CarCompanyTableViewCell.xib */; };
 		0F04AA602687DFEF0063EE7D /* CompanyTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AA5F2687DFEF0063EE7D /* CompanyTableViewModel.swift */; };
+		0F04AA6326889DD90063EE7D /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AA6126889DD90063EE7D /* CarTableViewCell.swift */; };
+		0F04AA6426889DD90063EE7D /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F04AA6226889DD90063EE7D /* CarTableViewCell.xib */; };
 		0F7D281C268602B300AE1983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D281B268602B300AE1983 /* AppDelegate.swift */; };
 		0F7D2820268602B300AE1983 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D281F268602B300AE1983 /* SplashViewController.swift */; };
 		0F7D2823268602B300AE1983 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D2821268602B300AE1983 /* Auth.storyboard */; };
@@ -47,6 +49,8 @@
 		0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCompanyTableViewCell.swift; sourceTree = "<group>"; };
 		0F04AA5C2687DE9E0063EE7D /* CarCompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCompanyTableViewCell.xib; sourceTree = "<group>"; };
 		0F04AA5F2687DFEF0063EE7D /* CompanyTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableViewModel.swift; sourceTree = "<group>"; };
+		0F04AA6126889DD90063EE7D /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		0F04AA6226889DD90063EE7D /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		0F7D2818268602B300AE1983 /* C3SInterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C3SInterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7D281B268602B300AE1983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F7D281F268602B300AE1983 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				0FAA51E32687B9AE00CDAA40 /* CarDetailsCollectionViewCell.xib */,
 				0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */,
 				0F04AA5C2687DE9E0063EE7D /* CarCompanyTableViewCell.xib */,
+				0F04AA6126889DD90063EE7D /* CarTableViewCell.swift */,
+				0F04AA6226889DD90063EE7D /* CarTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 				0FD257EB2687638400D72F4B /* CarCategories.json in Resources */,
 				0FAA51DB2687914700CDAA40 /* Car.storyboard in Resources */,
 				0F7D28312686064900AE1983 /* Color.xcassets in Resources */,
+				0F04AA6426889DD90063EE7D /* CarTableViewCell.xib in Resources */,
 				0F04AA5E2687DE9E0063EE7D /* CarCompanyTableViewCell.xib in Resources */,
 				0FD257EC2687638400D72F4B /* carsRecords.json in Resources */,
 				0F7D2823268602B300AE1983 /* Auth.storyboard in Resources */,
@@ -359,6 +366,7 @@
 			files = (
 				0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */,
 				0F04AA602687DFEF0063EE7D /* CompanyTableViewModel.swift in Sources */,
+				0F04AA6326889DD90063EE7D /* CarTableViewCell.swift in Sources */,
 				0FAA51E72687BBC900CDAA40 /* CarsCollectionViewController.swift in Sources */,
 				0FAA51E42687B9AF00CDAA40 /* CarDetailsCollectionViewCell.swift in Sources */,
 				0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */,
