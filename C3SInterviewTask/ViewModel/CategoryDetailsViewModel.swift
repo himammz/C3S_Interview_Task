@@ -70,7 +70,7 @@ class CategoryDetailsViewModel{
     
     func getCompanyTableViewModel()->CompanyTableViewModel{
         
-        let groupedCars = Dictionary(grouping: cars, by: {$0.carCompany}).values
+        let groupedCars = groupCarsByCompanyName()
         
        let companySections =  groupedCars.map({
             CompanySectionViewModel(carsCellViewModels: $0.map({
@@ -80,6 +80,10 @@ class CategoryDetailsViewModel{
         
         
         return CompanyTableViewModel(companiesViewModel: companySections )
+    }
+    func groupCarsByCompanyName() -> [[Car]]{
+        let toReturn =  Dictionary(grouping: cars, by: {$0.carCompany}).values
+        return  Array(toReturn)
     }
     
     

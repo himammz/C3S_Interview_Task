@@ -38,6 +38,7 @@
 		0FCDD8EE2688C0EF0085A1A7 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */; };
 		0FCDD8F02688D9280085A1A7 /* RentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */; };
 		0FCDD8F22688E5340085A1A7 /* SavedCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8F12688E5340085A1A7 /* SavedCarsViewController.swift */; };
+		0FCDD8FA2688FC8D0085A1A7 /* CategoryDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD8F92688FC8D0085A1A7 /* CategoryDetailsViewModelTests.swift */; };
 		0FD257DE2687482E00D72F4B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */; };
 		0FD257E02687489200D72F4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257DF2687489200D72F4B /* User.swift */; };
 		0FD257E326875C5A00D72F4B /* CarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257E226875C5A00D72F4B /* CarCategory.swift */; };
@@ -47,8 +48,19 @@
 		0FD257EC2687638400D72F4B /* carsRecords.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FD257EA2687638400D72F4B /* carsRecords.json */; };
 		0FD257F126877E6A00D72F4B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257F026877E6A00D72F4B /* HomeViewModel.swift */; };
 		0FD257F3268787FC00D72F4B /* UIViewController+Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD257F2268787FC00D72F4B /* UIViewController+Indicator.swift */; };
+		0FEE43BA26890E76001CC9AE /* RentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE43B926890E76001CC9AE /* RentViewModelTests.swift */; };
 		4C6A2BB18535A0C60FD7A6DB /* Pods_C3SInterviewTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FCDD8FC2688FC8D0085A1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F7D2810268602B300AE1983 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F7D2817268602B300AE1983;
+			remoteInfo = C3SInterviewTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F04AA5B2687DE9E0063EE7D /* CarCompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCompanyTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,6 +96,9 @@
 		0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		0FCDD8EF2688D9280085A1A7 /* RentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewModel.swift; sourceTree = "<group>"; };
 		0FCDD8F12688E5340085A1A7 /* SavedCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCarsViewController.swift; sourceTree = "<group>"; };
+		0FCDD8F72688FC8D0085A1A7 /* C3SInterviewTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = C3SInterviewTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCDD8F92688FC8D0085A1A7 /* CategoryDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		0FCDD8FB2688FC8D0085A1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FD257DD2687482E00D72F4B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FD257DF2687489200D72F4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FD257E226875C5A00D72F4B /* CarCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCategory.swift; sourceTree = "<group>"; };
@@ -93,6 +108,7 @@
 		0FD257EA2687638400D72F4B /* carsRecords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsRecords.json; sourceTree = "<group>"; };
 		0FD257F026877E6A00D72F4B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0FD257F2268787FC00D72F4B /* UIViewController+Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Indicator.swift"; sourceTree = "<group>"; };
+		0FEE43B926890E76001CC9AE /* RentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewModelTests.swift; sourceTree = "<group>"; };
 		4AA2E928CD4395E7093AFB57 /* Pods-C3SInterviewTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.debug.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B537D39CDBA8EFB9A1ECAC30 /* Pods_C3SInterviewTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C3SInterviewTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A141F8DE0BE4B7DE03EDB8 /* Pods-C3SInterviewTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3SInterviewTask.release.xcconfig"; path = "Target Support Files/Pods-C3SInterviewTask/Pods-C3SInterviewTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +123,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FCDD8F42688FC8D0085A1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7D281A268602B300AE1983 /* C3SInterviewTask */,
+				0FCDD8F82688FC8D0085A1A7 /* C3SInterviewTaskTests */,
 				0F7D2819268602B300AE1983 /* Products */,
 				A17E6A81EE10BD8A8B110AD4 /* Pods */,
 				2C11CB27F35F2D58AD28BF93 /* Frameworks */,
@@ -124,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7D2818268602B300AE1983 /* C3SInterviewTask.app */,
+				0FCDD8F72688FC8D0085A1A7 /* C3SInterviewTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				0FD257F426878C2500D72F4B /* Storyboard */,
-				0FD257F2268787FC00D72F4B /* UIViewController+Indicator.swift */,
 				0FD257EF26877E5800D72F4B /* ViewModel */,
 				0FD257E126875C4700D72F4B /* Models */,
 				0F7D2841268625C600AE1983 /* Controllers */,
@@ -183,6 +207,7 @@
 		0F7D2841268625C600AE1983 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0FD257F2268787FC00D72F4B /* UIViewController+Indicator.swift */,
 				0F7D281F268602B300AE1983 /* SplashViewController.swift */,
 				0F7D283426860CD500AE1983 /* LoginViewController.swift */,
 				0F7D2842268625FB00AE1983 /* HomeCollectionViewController.swift */,
@@ -203,6 +228,16 @@
 				0FCDD8ED2688C0EF0085A1A7 /* CoreDataController.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0FCDD8F82688FC8D0085A1A7 /* C3SInterviewTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDD8F92688FC8D0085A1A7 /* CategoryDetailsViewModelTests.swift */,
+				0FCDD8FB2688FC8D0085A1A7 /* Info.plist */,
+				0FEE43B926890E76001CC9AE /* RentViewModelTests.swift */,
+			);
+			path = C3SInterviewTaskTests;
 			sourceTree = "<group>";
 		};
 		0FD257E126875C4700D72F4B /* Models */ = {
@@ -287,6 +322,24 @@
 			productReference = 0F7D2818268602B300AE1983 /* C3SInterviewTask.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0FCDD8F62688FC8D0085A1A7 /* C3SInterviewTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FCDD8FE2688FC8D0085A1A7 /* Build configuration list for PBXNativeTarget "C3SInterviewTaskTests" */;
+			buildPhases = (
+				0FCDD8F32688FC8D0085A1A7 /* Sources */,
+				0FCDD8F42688FC8D0085A1A7 /* Frameworks */,
+				0FCDD8F52688FC8D0085A1A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FCDD8FD2688FC8D0085A1A7 /* PBXTargetDependency */,
+			);
+			name = C3SInterviewTaskTests;
+			productName = C3SInterviewTaskTests;
+			productReference = 0FCDD8F72688FC8D0085A1A7 /* C3SInterviewTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -298,6 +351,10 @@
 				TargetAttributes = {
 					0F7D2817268602B300AE1983 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					0FCDD8F62688FC8D0085A1A7 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 0F7D2817268602B300AE1983;
 					};
 				};
 			};
@@ -315,6 +372,7 @@
 			projectRoot = "";
 			targets = (
 				0F7D2817268602B300AE1983 /* C3SInterviewTask */,
+				0FCDD8F62688FC8D0085A1A7 /* C3SInterviewTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +393,13 @@
 				0FD257EC2687638400D72F4B /* carsRecords.json in Resources */,
 				0F7D2823268602B300AE1983 /* Auth.storyboard in Resources */,
 				0F7D2833268608EE00AE1983 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FCDD8F52688FC8D0085A1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +484,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FCDD8F32688FC8D0085A1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCDD8FA2688FC8D0085A1A7 /* CategoryDetailsViewModelTests.swift in Sources */,
+				0FEE43BA26890E76001CC9AE /* RentViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FCDD8FD2688FC8D0085A1A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F7D2817268602B300AE1983 /* C3SInterviewTask */;
+			targetProxy = 0FCDD8FC2688FC8D0085A1A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0F7D2821268602B300AE1983 /* Auth.storyboard */ = {
@@ -597,6 +679,48 @@
 			};
 			name = Release;
 		};
+		0FCDD8FF2688FC8D0085A1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W4RYJ3CK5;
+				INFOPLIST_FILE = C3SInterviewTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.C3SInterviewTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/C3SInterviewTask.app/C3SInterviewTask";
+			};
+			name = Debug;
+		};
+		0FCDD9002688FC8D0085A1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W4RYJ3CK5;
+				INFOPLIST_FILE = C3SInterviewTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahim.C3SInterviewTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/C3SInterviewTask.app/C3SInterviewTask";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -614,6 +738,15 @@
 			buildConfigurations = (
 				0F7D282D268602B400AE1983 /* Debug */,
 				0F7D282E268602B400AE1983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FCDD8FE2688FC8D0085A1A7 /* Build configuration list for PBXNativeTarget "C3SInterviewTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FCDD8FF2688FC8D0085A1A7 /* Debug */,
+				0FCDD9002688FC8D0085A1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
