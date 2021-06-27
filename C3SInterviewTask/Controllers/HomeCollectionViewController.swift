@@ -30,6 +30,15 @@ class HomeCollectionViewController: UICollectionViewController {
         }
     }
  
+    
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        
+        User.remove()
+        AppDelegate.rootViewController = LoginViewController.instance
+    }
+    
+    
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfIrems

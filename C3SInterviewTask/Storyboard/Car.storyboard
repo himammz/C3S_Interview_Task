@@ -56,6 +56,11 @@
                                 <segue destination="pJz-vn-Pvg" kind="show" id="yov-7B-64O"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="power" catalog="system" id="wnL-hm-j9X">
+                            <connections>
+                                <action selector="logoutAction:" destination="QtN-Jf-UZF" id="aoi-S5-rpp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kph-08-F65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -468,6 +473,7 @@
     <resources>
         <image name="grid " width="16" height="16"/>
         <image name="list" width="16" height="16"/>
+        <image name="power" catalog="system" width="128" height="124"/>
         <namedColor name="MainAppColor">
             <color red="0.58039215686274515" green="0.066666666666666666" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
